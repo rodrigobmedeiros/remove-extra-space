@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'remove-extra-space';
+  message = '';
+  convertedMessage = '';
+
+  removeSpaces() {
+    this.convertedMessage = this.message.replace('  ', ' ');
+  }
 }
