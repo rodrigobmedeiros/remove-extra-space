@@ -11,6 +11,6 @@ export class AppComponent {
   convertedMessage = '';
 
   removeSpaces() {
-    this.convertedMessage = this.message.replace(/\r?\n|\r/g, ' ').replace('  ', ' ');
+    this.convertedMessage = this.message.replace(/\r?\n|\r/g, ' ').replace(/\s+/g, ' ');
   }
 }
